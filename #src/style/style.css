@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 15px;
+}
+
+@layer base {
+	h1 {
+		@apply text-4xl font-georgia text-primary tracking-wider;
+	}
+	h2 {
+		@apply font-georgia text-light-xl md:text-h2 text-h2-small;
+	}
+	h3 {
+		@apply font-georgia text-h2-small md:text-4xl tracking-wider;
+	}
+	h4 {
+		@apply font-georgia text-lg  tracking-wider;
+	}
+	button {
+		@apply text-dark-3xl font-georgia text-lg transition duration-500
+	  bg-primary hover:bg-primary-light focus:bg-primary-light 
+	  rounded-full p-button focus:outline-none;
+	}
+	span {
+		@apply absolute h-1 rounded block w-full left-0 transition-all
+		 duration-500 bg-primary transform;
+	}
+	.popup-overlay {
+		@apply bg-black bg-opacity-70 h-screen;
+	}
+	.popup-content {
+		@apply flex h-full md:h-3/4 md:w-3/4 m-2 justify-center relative
+		md:flex-row flex-col overflow-hidden bg-primary-light rounded-2xl animate-opacity;
+	}
+}
+@media (max-width: 767px) {
+	.bg {
+		background: linear-gradient(to left, rgb(26, 26, 26) 80%, rgba(125, 185, 232, 0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
+	}
+}
+.link {
+	animation: showLink 0.5s ease-in;
+}
+
+@keyframes showLink {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+.shake > :hover {
+	animation: shake 1s ease-in;
+}
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+}
+
+.popup {
+	animation: openPopup 0.5s ease-in;
+}
+@keyframes openPopup {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+::-webkit-scrollbar {
+	display: none;
+}

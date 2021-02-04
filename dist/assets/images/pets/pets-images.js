@@ -1,0 +1,1 @@
+import importAll from"../../../script/utils/import-all";const img=[];importAll(require.context("./",!0,/\.(png|jpg|svg|gif|webp)$/),img);export default img;
