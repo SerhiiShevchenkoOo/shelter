@@ -73,7 +73,7 @@ function Friends() {
 						<img src={arrow} alt={arrow} />
 					</div>
 				</div>
-				<Link to='/our-pets'>
+				<Link to='/shelter/our-pets'>
 					<button>Get to know the rest</button>
 				</Link>
 			</div>

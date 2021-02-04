@@ -1,11 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	NavLink,
-} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import Main from './component/Main.jsx';
 import OurPets from './component/our-pets/OurPets.jsx';
 // import PropsTypes from 'prop-types'
@@ -15,7 +10,7 @@ function App() {
 	return (
 		<>
 			<Router>
-				<Route exact path='/shelter' component={Main} />
+				<Route exact path='/shelter/' component={Main} />
 				<Route path='/shelter/our-pets' component={OurPets} />
 			</Router>
 		</>

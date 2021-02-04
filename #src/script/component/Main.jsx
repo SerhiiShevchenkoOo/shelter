@@ -31,7 +31,7 @@ function Main() {
 								love you more than anybody else in the world, you will
 								see!
 							</p>
-							<Link to='/our-pets'>
+							<Link to='/shelter/our-pets'>
 								<button>Make a friend</button>
 							</Link>
 						</section>

@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-	BrowserRouter as Router,
-	NavLink,
-	useLocation,
-} from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import headerStyle from '../stylesJs/style-header';
 import useLockBodyScroll from '../utils/use-lock-body-scroll';
@@ -11,7 +7,7 @@ import useLockBodyScroll from '../utils/use-lock-body-scroll';
 const links = [
 	{
 		title: 'About the shelter',
-		path: '/shelter',
+		path: '/shelter/',
 		id: 1,
 	},
 	{
