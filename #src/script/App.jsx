@@ -13,12 +13,12 @@ import OurPets from './component/our-pets/OurPets.jsx';
 
 function App() {
 	return (
-		<Router>
-			<Switch>
+		<>
+			<Router>
 				<Route exact path='/' component={Main} />
 				<Route path='/our-pets' component={OurPets} />
-			</Switch>
-		</Router>
+			</Router>
+		</>
 	);
 }
 

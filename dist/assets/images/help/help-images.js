@@ -1,1 +1,0 @@
-import importAll from"../../../script/utils/import-all";const helpImage=[];importAll(require.context("./",!0,/\.(png|jpg|svg|gif|webp)$/),helpImage);export default helpImage;
