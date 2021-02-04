@@ -15,8 +15,8 @@ function App() {
 	return (
 		<>
 			<Router>
-				<Route exact path='/' component={Main} />
-				<Route path='/our-pets' component={OurPets} />
+				<Route exact path='/shelter' component={Main} />
+				<Route path='/shelter/our-pets' component={OurPets} />
 			</Router>
 		</>
 	);

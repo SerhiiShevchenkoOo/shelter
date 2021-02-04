@@ -11,12 +11,12 @@ import useLockBodyScroll from '../utils/use-lock-body-scroll';
 const links = [
 	{
 		title: 'About the shelter',
-		path: '/',
+		path: '/shelter',
 		id: 1,
 	},
 	{
 		title: 'Our pets',
-		path: '/our-pets',
+		path: '/shelter/our-pets',
 		id: 2,
 	},
 	{
